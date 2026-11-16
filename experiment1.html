@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Experiment 1</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="page">
+        <p style="text-align: right;"><a href="index.html" style="text-decoration: none; color: #007acc;">&larr; Back to Index</a></p>
+        
+        <div class="experiment-title text-center">Experiment No. 1.</div>
+
+        <div class="section-title">Aim:</div>
+        <p>Explain Client-Server Architecture and observe HTTP Requests and Responses using Browser Developer Tools.</p>
+
+        <div class="section-title">Program / Explanation:</div>
+        <p>
+            <strong>Client-Server Architecture:</strong> It is a distributed application structure that partitions tasks or workloads between service providers (servers) and service requesters (clients). 
+            When you type a website URL in your browser (Client), it sends an <strong>HTTP Request</strong> to the web server, which processes it and sends back an <strong>HTTP Response</strong> (typically HTML, CSS, JS documents).
+        </p>
+
+        <p>To inspect these interactions in Google Chrome / VS Code Live Server:</p>
+        <ol>
+            <li>Right-click anywhere on your web page and select <strong>Inspect</strong> (or press <code>F12</code>).</li>
+            <li>Navigate to the <strong>Network</strong> tab.</li>
+            <li>Reload the page (<code>Ctrl + R</code> or <code>Cmd + R</code>) to capture all HTTP activity.</li>
+            <li>Click on any request line (e.g., <code>experiment1.html</code>) to examine the Request and Response Headers.</li>
+        </ol>
+
+        <div class="section-title">Code Snippet:</div>
+<pre>
+&lt;!-- Example HTML structure sent by the server --&gt;
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    &lt;title&gt;HTTP Observation Test&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h1&gt;Hello World!&lt;/h1&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</pre>
+
+        <div class="section-title">Output Screenshot:</div>
+        <!-- Replace 'network-tab-screenshot.png' with your actual screenshot image file name -->
+        <div class="screenshot-box">
+            <img class="screenshot-img" src="network-tab-screenshot.png" alt="[Place your Chrome Developer Tools Network Tab Screenshot here]">
+        </div>
+    </div>
+
+</body>
+</html>
