@@ -2,94 +2,74 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>IWT Practical File Index</title>
+    <title>IWT Practical File</title>
     <link rel="stylesheet" href="style.css">
-    <style>
-        /* Document Layout Replication Styles */
-        .doc-page {
-            background-color: #ffffff;
-            color: #000000;
-            padding: 40px;
-            border: 1px solid #ccc;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
-            max-width: 850px;
-            margin: 20px auto;
-            font-family: 'Times New Roman', Times, serif;
-        }
-        .doc-title {
-            text-align: center;
-            font-size: 1.6rem;
-            font-weight: bold;
-            margin-bottom: 25px;
-            line-height: 1.4;
-            text-transform: uppercase;
-        }
-        .meta-table {
-            width: 100%;
-            border-collapse: collapse;
-            margin-bottom: 30px;
-        }
-        .meta-table td {
-            border: 1px solid #000000;
-            width: 50%;
-            padding: 15px;
-            vertical-align: top;
-            font-size: 1.05rem;
-            line-height: 1.5;
-        }
-        .doc-subtitle {
-            text-align: center;
-            font-size: 1.1rem;
-            font-weight: bold;
-            margin: 25px 0;
-            line-height: 1.4;
-        }
-        .doc-index-title {
-            text-align: center;
-            font-size: 1.4rem;
-            font-weight: bold;
-            margin-bottom: 15px;
-            text-transform: uppercase;
-            text-decoration: underline;
-        }
-        .academic-table {
-            width: 100%;
-            border-collapse: collapse;
-            margin-top: 15px;
-        }
-        .academic-table th, .academic-table td {
-            border: 1px solid #000000;
-            padding: 10px;
-            font-size: 1rem;
-            text-align: left;
-        }
-        .academic-table th {
-            background-color: #f2f2f2;
-            text-align: center;
-            font-weight: bold;
-        }
-        .center-text {
-            text-align: center;
-        }
-        .link-btn {
-            color: #0000ee;
-            text-decoration: none;
-            font-weight: bold;
-        }
-        .link-btn:hover {
-            text-decoration: underline;
-        }
-        /* Custom footer branding inside doc */
-        .doc-footer {
-            margin-top: 40px;
-            border-top: 1px double #000;
-            padding-top: 10px;
-            font-size: 0.8rem;
-            color: #555;
-            text-align: center;
-        }
-    </style>
 </head>
 <body>
-    <div class="d
+
+    <!-- ================= COVER PAGE ================= -->
+    <div class="page text-center">
+        <h1>Practical File</h1>
+        <p style="font-size: 20px; margin: 5px 0;">of</p>
+        <h2>Introduction to Web Technologies<br>(26CSE0106)</h2>
+        
+        <div class="batch-info">Batch-2026</div>
+        <div class="degree-info">Bachelor of Engineering (CSE)</div>
+
+        <!-- Chitkara University Logo Placeholder -->
+        <div class="logo-container">
+            <img class="logo-placeholder" src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Chitkara_University_Logo.png/640px-Chitkara_University_Logo.png" alt="Chitkara University Logo">
+        </div>
+
+        <!-- Student & Faculty Details Grid -->
+        <div class="details-grid">
+            <!-- Submitted By Column -->
+            <div class="details-column" style="text-align: left;">
+                <h3>Submitted By</h3>
+                <p><strong>Student Name:</strong> Ashi Garg</p>
+                <p><strong>Roll No:</strong> [Your Roll No.]</p>
+                <p><strong>Group No., Sem:</strong> Group No., Sem: 1st, BE (CSE)</p>
+                <p>Chitkara University, Punjab, 140401, India</p>
+            </div>
+
+            <!-- Submitted To Column -->
+            <div class="details-column" style="text-align: left;">
+                <h3>Submitted To</h3>
+                <p><strong>Faculty Name:</strong> [Faculty Name]</p>
+                <p>Assistant Professor, CSE</p>
+                <p>Chitkara University, Punjab, 140401, India</p>
+            </div>
+        </div>
+
+        <!-- Footer Department Info -->
+        <div class="footer-dept">
+            Department of Computer Science and Engineering,<br>
+            Chitkara University School of Engineering and Technology,<br>
+            Chitkara University, Punjab, India
+        </div>
+    </div>
+
+    <!-- ================= INDEX PAGE ================= -->
+    <div class="page">
+        <h1 class="text-center" style="margin-bottom: 30px;">Index</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th class="col-sr">Sr. No.</th>
+                    <th class="col-exp">Experiment</th>
+                    <th class="col-page">Page No.</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="col-sr">1</td>
+                    <td class="col-exp"><a href="experiment1.html">Explain Client-Server Architecture and observe HTTP Requests and Responses using Browser Developer Tools</a></td>
+                    <td class="col-page">1</td>
+                </tr>
+                <!-- Add future experiment rows here -->
+            </tbody>
+        </table>
+    </div>
+
+</body>
+</html>
