@@ -4,7 +4,88 @@
     <meta charset="UTF-8">
     <title>Experiment 1</title>
     <link rel="stylesheet" href="style.css">
+</head><!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Experiment 1</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
+<body>
+    <div class="page">
+        <p style="text-align: right;"><a href="index.html" style="text-decoration: none; color: #007acc;">&larr; Back to Index</a></p>
+        
+        <div class="experiment-title text-center">Experiment No. 1.</div>
+
+        <div class="section-title">Aim</div>
+        <p>Explain Client-Server Architecture and observe HTTP Requests and Responses using Browser Developer Tools.</p>
+
+        <div class="section-title">Program</div>
+        <p><strong>Client-Server Architecture:</strong> The browser (Client) sends an HTTP Request to the Web Server, and the server returns an HTTP Response containing the HTML file and status code (e.g., <code>200 OK</code>).</p>
+<pre>
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;title&gt;Client-Server Test&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h1&gt;HTTP Request and Response Observation&lt;/h1&gt;
+    &lt;p&gt;Open DevTools by right clicking  &rarr; Inspect &rarr; Network Tab &rarr; Reload Page (Command+R) to inspect headers.&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</pre>
+
+        <div class="section-title=">Output Screenshot</div>
+        <div class="screenshot-box">
+            <img class="screenshot-img" src="devtool_sc.png" alt="[Screenshot of  DevTools Network Tab]">
+        </div>
+    
+      <div class="section-title">Conclusion</div>
+        <p>Through this experiment, I successfully observed the Client-Server model in real-time. By utilizing Chrome Developer Tools, I monitored the HTTP network transactions and confirmed how headers coordinate request parameters and response values.</p>
+
+        <p>The essential HTTP Status Codes observed and documented are categorized as follows:</p>
+        <ul>
+            <li><strong>1xx Informational:</strong>
+                <ul>
+                    <li><strong><code>100 Continue</code>:</strong> Indicates that the initial part of the request has been received by the server and the client should continue with the request.</li>
+                </ul>
+            </li>
+            <li><strong>2xx Success:</strong>
+                <ul>
+                    <li><strong><code>200 OK</code>:</strong> The standard response for successful HTTP requests, indicating that the requested webpage or asset has loaded completely.</li>
+                    <li><strong><code>201 Created</code>:</strong> The request has been fulfilled and has resulted in the creation of a new resource on the server.</li>
+                </ul>
+            </li>
+            <li><strong>3xx Redirection:</strong>
+                <ul>
+                    <li><strong><code>301 Moved Permanently</code>:</strong> This and all future requests should be directed to the newly provided web address.</li>
+                    <li><strong><code>304 Not Modified</code>:</strong> Indicates that the resource has not changed since the last request, allowing the browser to load it efficiently from cache instead of downloading it again.</li>
+                </ul>
+            </li>
+            <li><strong>4xx Client Errors:</strong>
+                <ul>
+                    <li><strong><code>400 Bad Request</code>:</strong> The server cannot process the request due to a client-side error (e.g., malformed request syntax).</li>
+                    <li><strong><code>401 Unauthorized</code>:</strong> The request requires user authentication before accessing the resource.</li>
+                    <li><strong><code>403 Forbidden</code>:</strong> The server understood the request but refuses to authorize it (access is denied).</li>
+                    <li><strong><code>404 Not Found</code>:</strong> The requested resource or webpage could not be found on the server.</li>
+                </ul>
+            </li>
+            <li><strong>5xx Server Errors:</strong>
+                <ul>
+                    <li><strong><code>500 Internal Server Error</code>:</strong> A generic error message given when an unexpected condition is encountered by the web server.</li>
+                    <li><strong><code>502 Bad Gateway</code>:</strong> The server was acting as a gateway or proxy and received an invalid response from the upstream server.</li>
+                    <li><strong><code>503 Service Unavailable</code>:</strong> The server cannot handle the request temporarily (usually due to overloading or maintenance).</li>
+                </ul>
+            </li>
+        </ul>
+            
+
+    </div>
+</body>
+
+
+</body>
+</html>
 <body>
 
     <div class="page">
